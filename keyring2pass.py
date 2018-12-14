@@ -8,7 +8,7 @@ Imports passwords from the current user's Keyring. Tested on Gnome 3 w/
 Seahorse.
 
 Script by Benjamin Bach
-License: GPLv3 (because yeah!)
+License: GPLv2
 
 Do you want a long and complicated script downloaded from the interwebz of shitz
 to read and write all your passwords?
@@ -60,7 +60,7 @@ USAGE = """
 keyring2pass
 
 Script by Benjamin Bach
-License: GPLv3 (because yeah!)
+License: GPLv2
 
 Usage:
   keyring2pass import [--prefix=PREFIX] [--overwrite] [--log=LOG] [--skiplog=SKIPLOG] [--do-not-ask]
@@ -197,5 +197,3 @@ if __name__ == "__main__":
     except KeyboardInterrupt:
         print("\nCancelled.")
         sys.exit(1)
-
-
