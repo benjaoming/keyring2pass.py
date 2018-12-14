@@ -16,6 +16,7 @@ comfort. We cannot, however, guarantee for the use of third-party libraries,
 for instance python3-keyring. However, it's packaged for Debian already. 
 
 ::
+
   # Get the dependencies
   $ apt install python3-keyring python3-docopt
 
@@ -27,15 +28,17 @@ Suggested usage:
 List all your current password labels with ``keyring2pass.py list``. Then get a
 mental map or write down some future organization of your passwords. One of the
 strengths of ``pass`` is that it can sort passwords in a hierarchy / tree
-structure. You could for instance go for:
-email/<email>
-website/<site>/<username>
-chat/slack/<company>
+structure. You could for instance go for::
+
+  email/<email>
+  website/<site>/<username>
+  chat/slack/<company>
 
 After you know the hierarchy you want, start the import.
 
 Here's an example of a full command, suggesting "sites/" as a prefix and picking
 up from where it left in case it gets interrupted::
+
   keyring2pass.py import --log=success.log --skiplog=success.log --prefix=sites/
 
 After importing everything, check that it works and then you can delete all your
